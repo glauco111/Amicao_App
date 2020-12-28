@@ -7,6 +7,8 @@ import 'components/active_tile.dart';
 import 'components/pending_tile.dart';
 
 class MyAdsScreen extends StatefulWidget {
+  MyAdsScreen({this.initialPage = 0});
+  final int initialPage;
   @override
   _MyAdsScreenState createState() => _MyAdsScreenState();
 }
@@ -19,7 +21,8 @@ class _MyAdsScreenState extends State<MyAdsScreen>
   @override
   void initState() {
     super.initState();
-    tabController = TabController(length: (3), vsync: this);
+    tabController = TabController(
+        length: (3), vsync: this, initialIndex: widget.initialPage);
   }
 
   @override

@@ -1,4 +1,4 @@
-import 'package:amicao/screens/base/base_screen.dart';
+import 'package:amicao/screens/splash/splash_screen.dart';
 import 'package:amicao/stores/category_store.dart';
 import 'package:amicao/stores/home_store.dart';
 import 'package:amicao/stores/page_store.dart';
@@ -51,7 +51,7 @@ class MyApp extends StatelessWidget {
         GlobalCupertinoLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate
       ],
-      home: BaseScreen(),
+      home: Lottie(),
     );
   }
 }
