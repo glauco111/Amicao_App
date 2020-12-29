@@ -1,6 +1,7 @@
 import 'package:amicao/screens/account/account_screen.dart';
 import 'package:amicao/screens/create/create_screen.dart';
 import 'package:amicao/screens/home/home_screen.dart';
+import 'package:amicao/screens/partners/partners_screen.dart';
 import 'package:amicao/stores/page_store.dart';
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
@@ -37,6 +38,7 @@ class _BaseScreenState extends State<BaseScreen> {
           Container(
             color: Colors.yellow,
           ),
+          TravelConceptPage(),
           AccountScreen(),
         ],
       ),

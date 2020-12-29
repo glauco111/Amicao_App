@@ -12,7 +12,7 @@ class PageSection extends StatelessWidget {
         PageTile(
           label: 'Anúncios',
           iconData: Icons.list,
-          onTap: (){
+          onTap: () {
             pageStore.setPage(0);
           },
           highlighted: pageStore.page == 0,
@@ -20,7 +20,7 @@ class PageSection extends StatelessWidget {
         PageTile(
           label: 'Inserir Anúncio',
           iconData: Icons.edit,
-          onTap: (){
+          onTap: () {
             pageStore.setPage(1);
           },
           highlighted: pageStore.page == 1,
@@ -28,7 +28,7 @@ class PageSection extends StatelessWidget {
         PageTile(
           label: 'Chat',
           iconData: Icons.chat,
-          onTap: (){
+          onTap: () {
             pageStore.setPage(2);
           },
           highlighted: pageStore.page == 2,
@@ -36,18 +36,26 @@ class PageSection extends StatelessWidget {
         PageTile(
           label: 'Favoritos',
           iconData: Icons.favorite,
-          onTap: (){
+          onTap: () {
             pageStore.setPage(3);
           },
           highlighted: pageStore.page == 3,
         ),
         PageTile(
-          label: 'Minha Conta',
-          iconData: Icons.person,
-          onTap: (){
+          label: 'Parceiros',
+          iconData: Icons.store_outlined,
+          onTap: () {
             pageStore.setPage(4);
           },
           highlighted: pageStore.page == 4,
+        ),
+        PageTile(
+          label: 'Minha Conta',
+          iconData: Icons.person,
+          onTap: () {
+            pageStore.setPage(5);
+          },
+          highlighted: pageStore.page == 5,
         ),
       ],
     );
