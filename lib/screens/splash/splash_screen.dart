@@ -17,7 +17,7 @@ class _LottieState extends State<Lottie> with TickerProviderStateMixin {
 
     _controller = AnimationController(vsync: this);
     Timer(
-      Duration(seconds: 5),
+      Duration(seconds: 3),
       () => Navigator.of(context)
           .push(MaterialPageRoute(builder: (_) => BaseScreen())),
     );

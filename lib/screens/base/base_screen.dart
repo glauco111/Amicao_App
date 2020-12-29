@@ -38,7 +38,7 @@ class _BaseScreenState extends State<BaseScreen> {
           Container(
             color: Colors.yellow,
           ),
-          TravelConceptPage(),
+          PartnersScreen(),
           AccountScreen(),
         ],
       ),
